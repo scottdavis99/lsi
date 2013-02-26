@@ -1,7 +1,11 @@
 lsi
 ===
 <<<<<<< HEAD
+<<<<<<< HEAD
 I got mail I got mail YEAAAA!!!
+=======
+Matt was here.
+>>>>>>> 39974b544798d3a50f122ca3504db615273da65b
 =======
  _==/          i     i          \==_
      /XX/            |\___/|            \XX\
