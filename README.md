@@ -1,8 +1,7 @@
 lsi
 ===
-Dan was here, DROID DOES!
-Matt was here.
-      _==/          i     i          \==_
+
+ _==/          i     i          \==_
      /XX/            |\___/|            \XX\
    /XXXX\            |XXXXX|            /XXXX\
   |XXXXXX\_         _XXXXXXX_         _/XXXXXX|
@@ -14,5 +13,3 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   |XXX|       \XXX/^^\XXXXX/^^\XXX/       |XXX|
     \XX\       \X/    \XXX/    \X/       /XX/
        "\       "      \X/      "      /"
-
-GitHub class demo
