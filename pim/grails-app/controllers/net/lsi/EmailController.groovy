@@ -21,6 +21,10 @@ class EmailController {
 
     def save() {
         def emailInstance = new Email(params)
+        emailInstance.toAddresses = params.list("toAddresses") ?: []
+        emailInstance.ccAddresses = params.list("ccAddresses") ?: []
+        emailInstance.bccAddresses = params.list("bccAddresses") ?: []
+
         if (!emailInstance.save(flush: true)) {
             render(view: "create", model: [emailInstance: emailInstance])
             return
@@ -54,6 +58,7 @@ class EmailController {
 
     def update(Long id, Long version) {
         def emailInstance = Email.get(id)
+
         if (!emailInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'email.label', default: 'Email'), id])
             redirect(action: "list")
@@ -72,6 +77,10 @@ class EmailController {
 
         emailInstance.properties = params
 
+        emailInstance.toAddresses = params.list("toAddresses") ?: []
+        emailInstance.ccAddresses = params.list("ccAddresses") ?: []
+        emailInstance.bccAddresses = params.list("bccAddresses") ?: []
+        
         if (!emailInstance.save(flush: true)) {
             render(view: "edit", model: [emailInstance: emailInstance])
             return
