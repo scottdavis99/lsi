@@ -85,8 +85,7 @@
 	  
 		<g:link controller="notes">Notes</g:link>
 		<g:link controller="email">Email</g:link>
-		<g:link controller="library">Library</g:link>
 		<g:link controller="contact">Contacts</g:link>
-		<g:link controller="calendar">Calendar</g:link>
+		<g:link controller="event">Calendar</g:link>
 	</body>
 </html>
