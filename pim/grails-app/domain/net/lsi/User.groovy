@@ -1,8 +1,17 @@
 package net.lsi
 
-import groovy.transform.ToString
-
-@ToString
 class User {
-  String name
+
+
+    static constraints = {
+    }
+
+    String login
+    String password
+    String email
+    String name
+
+    String toString() {
+    	login
+    }
 }
