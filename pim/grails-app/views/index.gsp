@@ -81,6 +81,8 @@
 		</style>
 	</head>
 	<body>
+	  <h1>LSI Personal Information Manager</h1>
+	  
 		<g:link controller="notes">Notes</g:link>
 		<g:link controller="email">Email</g:link>
 		<g:link controller="library">Library</g:link>
