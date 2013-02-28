@@ -32,9 +32,9 @@
 					
 						<g:sortableColumn property="eventDate" title="${message(code: 'event.eventDate.label', default: 'Event Date')}" />
 					
-						<g:sortableColumn property="lastUpdated" title="${message(code: 'event.lastUpdated.label', default: 'Last Updated')}" />
+						<g:sortableColumn property="labels" title="${message(code: 'event.labels.label', default: 'Labels')}" />
 					
-						<g:sortableColumn property="location" title="${message(code: 'event.location.label', default: 'Location')}" />
+						<g:sortableColumn property="lastUpdated" title="${message(code: 'event.lastUpdated.label', default: 'Last Updated')}" />
 					
 					</tr>
 				</thead>
@@ -50,9 +50,9 @@
 					
 						<td><g:formatDate date="${eventInstance.eventDate}" /></td>
 					
-						<td><g:formatDate date="${eventInstance.lastUpdated}" /></td>
+						<td>${fieldValue(bean: eventInstance, field: "labels")}</td>
 					
-						<td>${fieldValue(bean: eventInstance, field: "location")}</td>
+						<td><g:formatDate date="${eventInstance.lastUpdated}" /></td>
 					
 					</tr>
 				</g:each>

@@ -31,7 +31,7 @@
 		<g:message code="event.labels.label" default="Labels" />
 		
 	</label>
-	
+	<g:textField name="labels" value="${eventInstance?.labels}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'location', 'error')} ">

@@ -11,8 +11,7 @@ class Event {
   String description
   User owner
   User participant
-
-  static hasMany = [labels: String]
+  String labels
 
   static constraints = {
     description maxSize: 1000
